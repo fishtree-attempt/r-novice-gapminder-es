@@ -657,12 +657,12 @@ gapminder[sample(nrow(gapminder), 5), ]
 ```
 
 ```{.output}
-        country year      pop continent lifeExp  gdpPercap
-1031    Morocco 2002 31167783    Africa  69.615  3258.4956
-914  Madagascar 1957  5181679    Africa  38.865  1589.2027
-222    Cambodia 1977  6978607      Asia  31.220   524.9722
-566     Germany 1957 71019069    Europe  69.100 10187.8267
-1451      Sudan 2002 37090298    Africa  56.369  1993.3983
+       country year      pop continent lifeExp  gdpPercap
+95     Bahrain 2002   656397      Asia  74.795 23403.5593
+103 Bangladesh 1982 93074406      Asia  50.009   676.9819
+72   Australia 2007 20434176   Oceania  81.235 34435.3674
+622     Guinea 1997  8048834    Africa  51.455   869.4498
+392       Cuba 1987 10239839  Americas  74.174  7532.9248
 ```
 
 :::::::::::::::::::::::::
