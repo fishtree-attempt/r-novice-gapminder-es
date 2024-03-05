@@ -430,10 +430,10 @@ llamado <code>gatos</code> que se vea de la siguiente forma:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode r" tabindex="0"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>color,peso,le_gusta_cuerda</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>mixto,<span class="fl">2.1</span>,<span class="dv">1</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>negro,<span class="fl">5.0</span>,<span class="dv">0</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>atigrado,<span class="fl">3.2</span>,<span class="dv">1</span></span></code></pre>
+<pre class="sourceCode r" tabindex="0"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a>color,peso,le_gusta_cuerda</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a>mixto,<span class="fl">2.1</span>,<span class="dv">1</span></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a>negro,<span class="fl">5.0</span>,<span class="dv">0</span></span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a>atigrado,<span class="fl">3.2</span>,<span class="dv">1</span></span></code></pre>
 </div>
 <p>Podemos usar la función <code>data.frame</code> para crearlo.</p>
 <div class="codewrapper sourceCode" id="cb2">
@@ -453,14 +453,13 @@ llamado <code>gatos</code> que se vea de la siguiente forma:</p>
 2    negro  5.0               0
 3 atigrado  3.2               1</code></pre>
 </div>
-<div id="consejo-edición-de-archivos-de-texto-en-r" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="consejo-edición-de-archivos-de-texto-en-r" class="callout-inner">
-<h3 class="callout-title">Consejo: Edición de archivos de texto en
-R<a class="anchor" aria-label="anchor" href="#consejo-edici%C3%B3n-de-archivos-de-texto-en-r"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="consejo-edición-de-archivos-de-texto-en-r">Consejo: Edición de archivos de texto en
+R<a class="anchor" aria-label="anchor" href="#consejo-edici%C3%B3n-de-archivos-de-texto-en-r"></a></h3>
 <div class="callout-content">
 <p>Crea el archivo <code>data/gatos-data.csv</code> en RStudio usando el
 ítem del Menú <strong>Files -&gt; New folder</strong>. Ahid debes crear
@@ -659,7 +658,7 @@ columnas de datos? ¿Cómo nos ayuda esto?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Discusión 1</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Al mantener todos los elementos de una columna del mismo tipo,
 podemos hacer suposiciones simples sobre nuestros datos; si puedes
@@ -971,7 +970,7 @@ A hasta Z (Pista: hay un vector pre-definido llamado
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Solución del desafío 1</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb66">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1103,7 +1102,7 @@ de caracteres cuando se carga de esta manera.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3">Solución al desafío 2</h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>Una solución es usar el argumento <code>stringAsFactors</code>:</p>
 <div class="codewrapper sourceCode" id="cb81">
@@ -1339,7 +1338,7 @@ cada caso.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4">Solución al desafío 3</h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb105">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1565,7 +1564,7 @@ cosas sobre la matriz:</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
   <h4 class="accordion-header" id="headingSolution5">Solución al desafío 4</h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <p>¿Cuál crees que es el resultado del comando
 <code>length(matrix_example)</code>?</p>
@@ -1610,7 +1609,7 @@ por columna o por renglón? Investiga como cambiar este comportamento.
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
   <h4 class="accordion-header" id="headingSolution6">Solución al desafío 5</h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
 <div class="accordion-body">
 <p>Construye otra matriz, esta vez conteniendo los números 1:50, con 5
 columnas y 10 renglones. ¿Cómo llenó la función
@@ -1651,7 +1650,7 @@ datos y estructuras de datos que hemos visto hasta ahora.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution7" aria-expanded="false" aria-controls="collapseSolution7">
   <h4 class="accordion-header" id="headingSolution7">Solución al desafío 6</h4>
 </button>
-<div id="collapseSolution7" class="accordion-collapse collapse" data-bs-parent="#accordionSolution7" aria-labelledby="headingSolution7">
+<div id="collapseSolution7" class="accordion-collapse collapse" aria-labelledby="headingSolution7" data-bs-parent="#accordionSolution7">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb136">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1701,7 +1700,7 @@ qué matrices producirán los otros comandos.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution8" aria-expanded="false" aria-controls="collapseSolution8">
   <h4 class="accordion-header" id="headingSolution8">Solución al desafío 7</h4>
 </button>
-<div id="collapseSolution8" class="accordion-collapse collapse" data-bs-parent="#accordionSolution8" aria-labelledby="headingSolution8">
+<div id="collapseSolution8" class="accordion-collapse collapse" aria-labelledby="headingSolution8" data-bs-parent="#accordionSolution8">
 <div class="accordion-body">
 <p>Considera la salida de R para la siguiente matriz:</p>
 <div class="codewrapper">
@@ -1803,7 +1802,7 @@ R.</li>
   "identifier": "https://preview.carpentries.org/r-novice-gapminder-es/04-data-structures-part1.html",
   "dateCreated": "2023-04-26",
   "dateModified": "2023-11-21",
-  "datePublished": "2024-02-27"
+  "datePublished": "2024-03-05"
 }
 
   </script><script>

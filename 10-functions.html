@@ -432,13 +432,12 @@ re-analizar los datos. También podríamos obtener datos similares de una
 fuente distinta en el futuro.</p>
 <p>En esta lección, aprenderás cómo escribir una función de forma que
 seamos capaces de repetir varias operaciones con un comando único.</p>
-<div id="qué-es-una-función" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="qué-es-una-función" class="callout-inner">
-<h3 class="callout-title">¿Qué es una función?<a class="anchor" aria-label="anchor" href="#qu%C3%A9-es-una-funci%C3%B3n"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="qué-es-una-función">¿Qué es una función?<a class="anchor" aria-label="anchor" href="#qu%C3%A9-es-una-funci%C3%B3n"></a></h3>
 <div class="callout-content">
 <p>Las funciones reúnen una secuencia de operaciones como un todo,
 almacenandola para su uso continuo. Las funciones proveen:</p>
@@ -490,13 +489,12 @@ afectar su funcionalidad.</p>
 argumentos se asignan a esas variables para que podamos usarlos dentro
 de la función. Dentro de la función, usamos un <a href="reference.html#return-statement">return statement</a> para
 devolver un resultado a quien lo solicitó.</p>
-<div id="sugerencia" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="sugerencia" class="callout-inner">
-<h3 class="callout-title">Sugerencia<a class="anchor" aria-label="anchor" href="#sugerencia"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="sugerencia">Sugerencia<a class="anchor" aria-label="anchor" href="#sugerencia"></a></h3>
 <div class="callout-content">
 <p>Una característica única de R es que el <strong>return
 statement</strong> no es necesario. R automáticamente devuelve cualquier
@@ -910,7 +908,7 @@ numérico.</p>
 <div class="codewrapper sourceCode" id="cb29">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode r" tabindex="0"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>calcGDP <span class="ot">&lt;-</span> <span class="cf">function</span>(dat, <span class="at">year=</span><span class="cn">NULL</span>, <span class="at">country=</span><span class="cn">NULL</span>) {</span></code></pre>
+<pre class="sourceCode r" tabindex="0"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" tabindex="-1"></a>calcGDP <span class="ot">&lt;-</span> <span class="cf">function</span>(dat, <span class="at">year=</span><span class="cn">NULL</span>, <span class="at">country=</span><span class="cn">NULL</span>) {</span></code></pre>
 </div>
 <p>Aquí hemos agregado dos argumentos, año y país. Hemos establecido
 <em>argumentos predeterminados</em> para ambos como NULL usando el
@@ -940,13 +938,12 @@ adelante. Podemos pedirle que calcule el GDP para:</p>
 <li>Una combinación única de año y país.</li>
 </ul><p>Al utilizar el operador <code>%in%</code>, también podemos asignarle
 múltiples años o países a estos argumentos.</p>
-<div id="sugerencia-pasar-por-valor" class="callout callout">
+<div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="sugerencia-pasar-por-valor" class="callout-inner">
-<h3 class="callout-title">Sugerencia: Pasar por valor<a class="anchor" aria-label="anchor" href="#sugerencia-pasar-por-valor"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="sugerencia-pasar-por-valor">Sugerencia: Pasar por valor<a class="anchor" aria-label="anchor" href="#sugerencia-pasar-por-valor"></a></h3>
 <div class="callout-content">
 <p>Las funciones en R casi siempre hacen copias de los datos para operar
 dentro del cuerpo de una función. Cuando modificamos <code>dat</code>
@@ -959,13 +956,12 @@ dentro del cuerpo de la función, se mantendrá dentro de la función.</p>
 </div>
 </div>
 </div>
-<div id="sugerencia-alcance-de-la-función" class="callout callout">
+<div id="callout4" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="sugerencia-alcance-de-la-función" class="callout-inner">
-<h3 class="callout-title">Sugerencia: Alcance de la función<a class="anchor" aria-label="anchor" href="#sugerencia-alcance-de-la-funci%C3%B3n"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="sugerencia-alcance-de-la-función">Sugerencia: Alcance de la función<a class="anchor" aria-label="anchor" href="#sugerencia-alcance-de-la-funci%C3%B3n"></a></h3>
 <div class="callout-content">
 <p>Otro concepto importante es el alcance: las variables (¡o funciones!)
 que creas o modificas dentro del cuerpo de una función sólo existen
@@ -981,10 +977,10 @@ ejecuta la función.</p>
 <div class="codewrapper sourceCode" id="cb31">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode r" tabindex="0"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>  gdp <span class="ot">&lt;-</span> dat<span class="sc">$</span>pop <span class="sc">*</span> dat<span class="sc">$</span>gdpPercap</span>
-<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>  new <span class="ot">&lt;-</span> <span class="fu">cbind</span>(dat, <span class="at">gdp=</span>gdp)</span>
-<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(new)</span>
-<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a><span class="er">}</span></span></code></pre>
+<pre class="sourceCode r" tabindex="0"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" tabindex="-1"></a>  gdp <span class="ot">&lt;-</span> dat<span class="sc">$</span>pop <span class="sc">*</span> dat<span class="sc">$</span>gdpPercap</span>
+<span id="cb31-2"><a href="#cb31-2" tabindex="-1"></a>  new <span class="ot">&lt;-</span> <span class="fu">cbind</span>(dat, <span class="at">gdp=</span>gdp)</span>
+<span id="cb31-3"><a href="#cb31-3" tabindex="-1"></a>  <span class="fu">return</span>(new)</span>
+<span id="cb31-4"><a href="#cb31-4" tabindex="-1"></a><span class="er">}</span></span></code></pre>
 </div>
 <p>Finalmente, calculamos GDP en nuestro nuevo subconjunto de datos, y
 creamos una nueva <strong>dataframe</strong> con esta columna agregada.
@@ -1093,13 +1089,12 @@ el texto flanqueado del <code>wrapper</code>:</p>
 </div>
 </div>
 </div>
-<div id="sugerencia-1" class="callout callout">
+<div id="callout5" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="sugerencia-1" class="callout-inner">
-<h3 class="callout-title">Sugerencia<a class="anchor" aria-label="anchor" href="#sugerencia-1"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="sugerencia-1">Sugerencia<a class="anchor" aria-label="anchor" href="#sugerencia-1"></a></h3>
 <div class="callout-content">
 <p>R tiene algunos aspectos únicos que pueden ser explotados cuando se
 realizan operaciones más complicadas. No escribiremos nada que requiera
@@ -1111,13 +1106,12 @@ Wickham.</p>
 </div>
 </div>
 </div>
-<div id="sugerencia-probar-y-documentar" class="callout callout">
+<div id="callout6" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="sugerencia-probar-y-documentar" class="callout-inner">
-<h3 class="callout-title">Sugerencia: Probar y documentar<a class="anchor" aria-label="anchor" href="#sugerencia-probar-y-documentar"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="sugerencia-probar-y-documentar">Sugerencia: Probar y documentar<a class="anchor" aria-label="anchor" href="#sugerencia-probar-y-documentar"></a></h3>
 <div class="callout-content">
 <p>Es importante probar las funciones así como documentarlas: la
 documentación ayuda, tanto a tí como a otros, a entender cuál es el
@@ -1222,7 +1216,7 @@ función en R de manera flexible.</li>
   "identifier": "https://preview.carpentries.org/r-novice-gapminder-es/10-functions.html",
   "dateCreated": "2023-04-26",
   "dateModified": "2023-11-21",
-  "datePublished": "2024-02-27"
+  "datePublished": "2024-03-05"
 }
 
   </script><script>
